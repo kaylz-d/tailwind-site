@@ -6,42 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-        @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');*/
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-        
-        .font-bebas {
-            font-family: 'Bebas Neue', sans-serif;
-        }
-
-        .font-funnel {
-            font-family: 'Funnel Sans', sans-serif;
-        }
-
-        .font-roboto {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets\img\ei_icon_white_bg.jpg" type="image/x-icon">
 </head>
 
-<body>
+<!-- bruh don't look at my code >:( -->
 
-    <nav class="relative size-32">
-        <li>Home</li>
-        <li>Schedule</li>
-        <li>Clubs</li>
+<!-- alt color #293d62 -->
+
+<body class="bg-[#ffffff]">
+
+    <!-- reminder to make nav responsive -->
+
+    <nav
+        class="font-[Funnel_Sans] mx-auto h-24 flex items-center align-middle justify-between p-6 bg-[#152c58] border-b border-[#455cc5]">
+        <div class="inline-flex items-center w-50">
+            <img class="scale-75 w-12" src="assets/img/cleaner_cut_logo.png" alt="">
+            <a class="text-white hover:font-semibold inline-flex" href="index.html">Eastvale Innovators</a>
+        </div>
+        <div class="space-x-4 pr-4">
+            <a href="" class="hover:border-blue-600 hover:border-b-2 text-white">Projects</a>
+            <a href="" class="hover:border-blue-600 hover:border-b-2 text-white">Schedule</a>
+            <a href="clubs.html" class="hover:border-blue-600 hover:border-b-2 text-white">Clubs</a>
+        </div>
     </nav>
 
     <main>
-        <div class="container mx-auto px-4 py-4">
-            <h1 class="text-blue-600 text-9xl font-medium font-funnel">Yippee</h1>
+        <!-- <div class="container mx-auto px-4 py-4">
+            <h1 class="text-blue-600 text-9xl font-medium font-[Funnel Sans]">Yippee</h1>
             <p>Content :)</p>
-        </div>
+        </div> -->
+
+        <section class="relative mx-auto">
+            <img src="assets\img\stem-third-floor-hallway-ALTERNATE-CROP-squeezed.jpg"
+                alt="3rd floor view of the Eastvale STEM Academy.">
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+
+                <div class="p-10">
+                    <h1 class="text-white font-semibold font-[Funnel_Sans]
+                sm:text-4xl
+                md:text-6xl
+                lg:text-7xl">EASTVALE INNOVATORS</h1>
+                    <p class="text-white font-normal font-[Funnel_Sans] text-xl text-center p-2">Gearing Up For The Future</p>
+                </div>
+
+                <div class="p-2 scale-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="white" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 grid-rows-1 gap-4 sm:m-4 md:m-10 lg:m-20 p-8 items-center">
+            <ul class="text-[#000000] font-semibold font-[Funnel_Sans] 
+            sm:text-4xl
+            md:text-5xl
+            lg:text-6xl
+            max-w-100">
+                <!-- <li>A COMMUNITY OF</li>
+                <li ><span class="text-[#3e69ba]">makers</span>,</li>
+                <li><span class="text-[#3e69ba]">coders</span>,</li>
+                <li>designers,</li>
+                <li>& <span class="text-[#3e69ba]">tinkerers</span>.</li> -->
+                <li>Makers,</li>
+                <li>Coders,</li>
+                <li>Designers,</li>
+                <li>& Tinkerers.</li>
+                <div>
+                    <p class="my-8 text-3xl font-extralight">We're a community of students at Eleanor Roosevelt High
+                        School & the Eastvale STEM Academy.</p>
+                </div>
+            </ul>
+            <div>
+                <img class="rounded-lg" src="assets\img\20250617_143335.jpg" alt="Image taken after summer meeting.">
+            </div>
+        </section>
+
+        <section
+            class="font-[Funnel_Sans] w-10/12 grid grid-cols-2 mx-auto my-20 rounded-lg justify-center text-center bg-gray-200">
+            <div>
+                <img src="assets\img\stem-orange-tint-2-CROP-16-9.jpg" alt="">
+                <!-- <p>filler for img; talk about vmm here</p> -->
+            </div>
+            <div>
+                <ol>
+                    <li>then talk abt projects here</li>
+                    <li>maybe have a button redirect to projects page</li>
+                    <li>and maybe use a grid idk</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- <div class="min-h-screen p-8 grid-flow-col justify-center text-center">
+
+            <h1 class="text-white font-semibold font-[Funnel_Sans] text-6xl">Home</h1>
+
+        </div> -->
+
     </main>
+
+    <footer>
+        <p class="text-white">LOL</p>
+    </footer>
 
 </body>
 
