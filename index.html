@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,14 +26,16 @@
         class="font-[Funnel_Sans] mx-auto h-24 flex items-center align-middle justify-between p-6 bg-[#152c58] border-b border-[#455cc5]">
         <div class="inline-flex items-center w-50">
             <img class="scale-75 w-12" src="assets/img/cleaner_cut_logo.png" alt="">
-            <a class="text-white hover:font-semibold inline-flex" href="index.html">Eastvale Innovators</a>
+            <a class="text-white hover:font-semibold sm:hidden md:inline-flex" href="index.html">Eastvale Innovators</a>
         </div>
         <div class="space-x-4 pr-4">
-            <a href="" class="hover:border-blue-600 hover:border-b-2 text-white">Projects</a>
-            <a href="" class="hover:border-blue-600 hover:border-b-2 text-white">Schedule</a>
-            <a href="clubs.html" class="hover:border-blue-600 hover:border-b-2 text-white">Clubs</a>
+            <a href="comingsoon.html" class="hover:border-blue-600 hover:border-b-2 text-white">Projects</a>
+            <a href="comingsoon.html" class="hover:border-blue-600 hover:border-b-2 text-white">Schedule</a>
+            <a href="comingsoon.html" class="hover:border-blue-600 hover:border-b-2 text-white">Clubs</a>
         </div>
     </nav>
+
+    <!-- CATHY IS COOL -->
 
     <main>
         <!-- <div class="container mx-auto px-4 py-4">
@@ -47,11 +49,10 @@
             <div class="absolute inset-0 flex flex-col items-center justify-center">
 
                 <div class="p-10">
-                    <h1 class="text-white font-semibold font-[Funnel_Sans]
-                sm:text-4xl
-                md:text-6xl
-                lg:text-7xl">EASTVALE INNOVATORS</h1>
-                    <p class="text-white font-normal font-[Funnel_Sans] text-xl text-center p-2">Gearing Up For The Future</p>
+                    <h1 class="text-white font-semibold font-[Funnel_Sans] sm:text-5xl md:text-7xl text-center">EASTVALE
+                        INNOVATORS</h1>
+                    <p class="text-white font-normal font-[Funnel_Sans] text-xl text-center p-2">Gearing Up For The
+                        Future</p>
                 </div>
 
                 <div class="p-2 scale-150">
@@ -64,12 +65,11 @@
             </div>
         </section>
 
-        <section class="grid grid-cols-2 grid-rows-1 gap-4 sm:m-4 md:m-10 lg:m-20 p-8 items-center">
-            <ul class="text-[#000000] font-semibold font-[Funnel_Sans] 
-            sm:text-4xl
-            md:text-5xl
-            lg:text-6xl
-            max-w-100">
+        <p class="font-[Funnel_Sans] text-center pt-10">INSTAGRAM: @EASTVALE_INNOVATORS</p>
+
+        <section
+            class="font-[Funnel_Sans] grid md:grid-cols-2 sm:grid-cols-1 grid-rows-1 gap-4 sm:m-4 md:m-10 lg:m-20 p-8 items-center">
+            <ul class="text-[#000000] font-semibold text-5xl">
                 <!-- <li>A COMMUNITY OF</li>
                 <li ><span class="text-[#3e69ba]">makers</span>,</li>
                 <li><span class="text-[#3e69ba]">coders</span>,</li>
@@ -81,7 +81,11 @@
                 <li>& Tinkerers.</li>
                 <div>
                     <p class="my-8 text-3xl font-extralight">We're a community of students at Eleanor Roosevelt High
-                        School & the Eastvale STEM Academy.</p>
+                        School & the Eastvale STEM Academy.
+                        <a href="comingsoon.html"
+                            class="text-[#455cc5] font-medium hover:underline hover:decoration-dotted">View our
+                            affiliated clubs ↗</a>
+                    </p>
                 </div>
             </ul>
             <div>
@@ -90,17 +94,14 @@
         </section>
 
         <section
-            class="font-[Funnel_Sans] w-10/12 grid grid-cols-2 mx-auto my-20 rounded-lg justify-center text-center bg-gray-200">
+            class="font-[Funnel_Sans] grid md:grid-cols-2 sm:grid-cols-1 mx-auto mt-20 rounded-lg justify-center text-center bg-[#8cafda]">
             <div>
                 <img src="assets\img\stem-orange-tint-2-CROP-16-9.jpg" alt="">
                 <!-- <p>filler for img; talk about vmm here</p> -->
             </div>
-            <div>
-                <ol>
-                    <li>then talk abt projects here</li>
-                    <li>maybe have a button redirect to projects page</li>
-                    <li>and maybe use a grid idk</li>
-                </ol>
+            <div class="font-[Funnel_Sans] flex flex-col justify-center items-center min-h-30">
+                <p>Coming Soon</p>
+                <img src="https://xyz.crd.co/assets/images/gallery20/1cbac115.gif?v=de6feabd" alt="sleeping cat">
             </div>
         </section>
 
@@ -112,8 +113,14 @@
 
     </main>
 
-    <footer>
-        <p class="text-white">LOL</p>
+    <footer class="bg-[#152c58] font-[Funnel_Sans] h-80 p-10 border-t border-[#455cc5] flex items-center justify-center flex-col">
+        <!-- <p class="text-white">LOL</p> -->
+        <div class="">
+            <img src="assets\img\ei_title_fancy.png" alt="Eastvale Innovators title" class="scale-50">
+        </div>
+        <div class="flex items-center justify-center flex-row">
+            <p class="text-white">© Eastvale Innovators 2025</p>
+        </div>
     </footer>
 
 </body>

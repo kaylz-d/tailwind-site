@@ -1,0 +1,50 @@
+/* Main stylesheet — plain CSS, no Tailwind */
+
+:root{
+  --nav-bg: #152c58;
+  --nav-border: #455cc5;
+  --accent-blue: #3b82f6;
+  --muted-bg: #e5e7eb;
+  --font-main: 'Funnel Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing: border-box}
+body{margin:0;font-family:var(--font-main);background:#fff;color:#111}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--nav-bg);
+  border-bottom: 3px solid var(--nav-border);
+  height: 72px;
+}
+
+.nav-left {display:flex;align-items:center;gap:.75rem}
+.logo{width:48px;height:auto;display:block}
+.brand{color:#fff;text-decoration:none;font-weight:600}
+.nav-links a{color:#fff;margin-left:1rem;text-decoration:none;padding-bottom:.15rem}
+.nav-links a:hover{border-bottom:2px solid var(--accent-blue)}
+
+.hero{position:relative;background-image:url('assets/img/stem-third-floor-hallway-ALTERNATE-CROP-squeezed.jpg');background-size:cover;background-position:center;min-height:420px}
+.hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,.25);text-align:center;padding:2rem}
+.hero-title{color:#fff;font-weight:700;font-size:2rem;margin:0 0 .5rem 0}
+.hero-sub{color:#fff;font-size:1.125rem;margin:0}
+.hero-arrow{margin-top:1rem;transform:scale(1.2)}
+
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:center;padding:2rem}
+.intro-list ul{list-style:none;padding:0;margin:0 0 1rem 0;font-weight:700;font-size:2rem}
+.intro-desc{margin-top:1.25rem;font-weight:300;font-size:1.25rem}
+.intro-image img{width:100%;display:block;border-radius:8px}
+
+.info{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:1100px;margin:2.5rem auto;padding:1rem;background:var(--muted-bg);border-radius:8px}
+.info-image img{width:100%;height:auto;display:block}
+.info-list ol{padding-left:1.25rem}
+
+.site-footer{background:#0f172a;color:#fff;padding:1rem;text-align:center}
+
+/* Responsive tweaks */
+@media (min-width:640px){.hero-title{font-size:2.25rem}.intro-list ul{font-size:2.25rem}}
+@media (min-width:768px){.hero{min-height:560px}.hero-title{font-size:3rem}.intro-list ul{font-size:2.75rem}}
+@media (min-width:1024px){.hero-title{font-size:3.75rem}.intro{padding:3rem}}
